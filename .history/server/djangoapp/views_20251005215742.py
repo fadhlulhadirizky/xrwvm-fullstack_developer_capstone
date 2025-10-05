@@ -45,7 +45,6 @@ def logout_request(request):
     return JsonResponse(data)
 
 # Create a `registration` view to handle sign up request
-# Create a `registration` view to handle sign up request
 @csrf_exempt
 def registration(request):
     data = json.loads(request.body)

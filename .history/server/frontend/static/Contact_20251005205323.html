@@ -1,0 +1,172 @@
+<html>
+<head>
+  <!-- Link the style sheet here -->
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <style>
+    .contact-container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+    .contact-info {
+      background-color: #f8f9fa;
+      padding: 30px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+    .contact-item {
+      margin-bottom: 20px;
+      padding: 15px;
+      border-left: 4px solid darkturquoise;
+      background-color: white;
+    }
+    .contact-icon {
+      font-size: 24px;
+      color: darkturquoise;
+      margin-right: 10px;
+    }
+    .business-hours {
+      background-color: #e9f7fe;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+    .hours-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .hours-table td {
+      padding: 8px;
+      border-bottom: 1px solid #ddd;
+    }
+    .hours-table tr:last-child td {
+      border-bottom: none;
+    }
+    .map-container {
+      margin-top: 30px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+    <div class="container-fluid">
+      <h2 style="padding-right: 5%;">Dealerships</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="font-size: larger;" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="contact-container">
+    <div class="banner text-center mb-5">
+      <h1 style="color: darkturquoise; margin-bottom: 20px;">Contact Us</h1>
+      <p class="lead">We're here to help you find your dream car. Get in touch with us!</p>
+    </div>
+
+    <div class="contact-info">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="contact-item">
+            <h4><span class="contact-icon">📍</span> Visit Our Showroom</h4>
+            <p>123 Automotive Avenue<br>Motor City, MC 12345<br>United States</p>
+          </div>
+
+          <div class="contact-item">
+            <h4><span class="contact-icon">📞</span> Call Us</h4>
+            <p>Main: (555) 123-4567<br>Sales: (555) 123-4568<br>Service: (555) 123-4569</p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="contact-item">
+            <h4><span class="contact-icon">✉️</span> Email Us</h4>
+            <p>General: info@bestcars.com<br>Sales: sales@bestcars.com<br>Service: service@bestcars.com</p>
+          </div>
+
+          <div class="contact-item">
+            <h4><span class="contact-icon">🌐</span> Follow Us</h4>
+            <p>Facebook: @BestCarsDealership<br>Instagram: @BestCarsOfficial<br>Twitter: @BestCarsAuto</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="business-hours">
+      <h4 style="color: darkturquoise; margin-bottom: 20px;">Business Hours</h4>
+      <table class="hours-table">
+        <tr>
+          <td><strong>Monday - Friday</strong></td>
+          <td>9:00 AM - 8:00 PM</td>
+        </tr>
+        <tr>
+          <td><strong>Saturday</strong></td>
+          <td>9:00 AM - 6:00 PM</td>
+        </tr>
+        <tr>
+          <td><strong>Sunday</strong></td>
+          <td>11:00 AM - 5:00 PM</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="contact-form mt-5">
+      <h4 style="color: darkturquoise; margin-bottom: 20px;">Send Us a Message</h4>
+      <form>
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="First Name" required>
+          </div>
+          <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Last Name" required>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <input type="email" class="form-control" placeholder="Email Address" required>
+          </div>
+          <div class="col-md-6">
+            <input type="tel" class="form-control" placeholder="Phone Number">
+          </div>
+        </div>
+        <div class="mb-3">
+          <select class="form-control" required>
+            <option value="">Select Department</option>
+            <option value="sales">Sales</option>
+            <option value="service">Service</option>
+            <option value="parts">Parts</option>
+            <option value="general">General Inquiry</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn" style="background-color: darkturquoise; color: white; padding: 10px 30px;">Send Message</button>
+      </form>
+    </div>
+
+    <div class="map-container">
+      <h4 style="color: darkturquoise; margin-bottom: 15px;">Find Us</h4>
+      <div style="background-color: #e9ecef; padding: 100px 20px; text-align: center; border-radius: 8px;">
+        <p>📍 Interactive Map Would Appear Here</p>
+        <p><small>123 Automotive Avenue, Motor City, MC 12345</small></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
